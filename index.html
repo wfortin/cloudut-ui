@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud UT</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<div class="jumbotron">
+    <h1>
+        <i class="fa fa-bug"></i>
+        Cloud UT
+    </h1>
+    <p>
+        Clout UT is an initiative to promote unit testing and clean code internally at
+        <a href="http://coveo.com">
+            <img class="logocoveo" src="img/logocoveo.png" alt="Coveo logo"/>
+        </a><br/>
+        <span class="slogan">
+        A unit test a day, keeps the bugs away!
+        </span>
+    </p>
+    <button class="btn btn-default btn-lg" data-toggle="modal" data-target="#add-test">
+        <i class="fa fa-plus-circle"></i>
+        Add a test
+    </button>
+</div>
+<table id="users" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>Tests commited</th>
+            <th>Last test</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="modal fade" id="add-test" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted">
+            <p>
+            Avatars are provided by <a href="http://gravatar.com">Gravatar</a>
+            </p>
+            <p>
+            An initiative of <a href="https://twitter.com/willyfortin">@willyfortin</a> and <a
+                    href="https://twitter.com/JoRochette">@JoRochette</a>
+            </p>
+        </p>
+    </div>
+</div>
+</body>
+<script data-main="app" src="bower_components/requirejs/require.js"></script>
+</html>
